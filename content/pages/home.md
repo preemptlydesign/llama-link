@@ -1,46 +1,42 @@
 ---
 title: Hello
 blocks:
-  - message: "# Talk to llama,\n\n# Share the\_**drama!**\n\nConnect, Communicate, and Create Memorable Moments with Llama Video Calls\n"
+  - message: |
+      # Empower Your Team
+
+      # Shine in Every Customer Interaction
+
+      Confidence, preparation, and proactivity for exceptional customer success.
     links:
       - link: /
-        label: Get Started
+        label: Schedule a Demo
         style: button
       - link: /learn
         label: Learn More
         style: simple
     _template: welcomeHero
-  - byline: Services
-    message: >
-      ## Experience video calls like never before with LlamaLink.
-
-
-      LlamaLink was born out of a desire to bring joy, laughter, and a touch of
-      whimsy to the world of video communication. We believe that every
-      conversation should be an extraordinary experience, and what better way to
-      add a dash of excitement than by introducing llamas into the mix?
+  - byline: ''
+    message: |
+      ## Turning Businesses into Partners and Customers into Advocates.
     features:
       - icon: ChatBubbles
-        label: LlamaLink App
+        label: Transforming Connections
         description: >-
-          Our user-friendly app provides a seamless experience across devices,
-          allowing you to connect with others effortlessly. Available on
-          desktop, mobile, and tablet, LlamaLink keeps you connected anytime,
-          anywhere.
+          At Preemptly, we go beyond being a platform. We foster meaningful
+          emotional connections that turn businesses into trusted partners and
+          customers into loyal advocates.
       - icon: StarWindow
-        label: LlamaLink Messages
+        label: Empowering Growth Together
         description: >-
-          Host virtual meetings, conferences, and webinars with ease using
-          LlamaLink Meetings. Enjoy the collaborative features, such as screen
-          sharing, file sharing, and real-time chat, all while surrounded by
-          llama-themed goodness.
+          Preemptly empowers businesses to grow with confidence by creating
+          trust and enabling success. Together, we achieve more—driving
+          innovation and building lasting relationships.
       - icon: SocialEmoji
-        label: Llama Social
+        label: Success Through Trust
         description: >-
-          Connect with friends, family, and colleagues through LlamaLink Social.
-          Share updates, photos, and videos, and engage in llama-themed
-          conversations that will make your social network experience unique and
-          entertaining.
+          Trust is the foundation of every great relationship. Preemptly bridges
+          the gap, creating emotional bonds that inspire advocacy and ensure
+          shared success for businesses and customers alike.
       - icon: BallStar
         label: Mission Statement
         description: >-
@@ -48,10 +44,12 @@ blocks:
           the charm of llamas, transforming ordinary conversations into
           extraordinary moments.
     _template: featureList
-  - label: Announcement
-    featuredPost: content/posts/call-themes.md
+  - label: A New Chapter Begins!
+    featuredPost: content/posts/Power_of_Preemptly.md
     _template: featuredReading
 ---
+
+
 
 
 

@@ -9,10 +9,10 @@ import { IconList } from "@/components/icons"
 
 export function WelcomeHero(props: PageBlocksWelcomeHero) {
   return (
-    <section className="relative overflow-hidden">
-      <div className="absolute inset-0 mx-auto h-full w-full max-w-[1600px]">
+    <section className="relative overflow-hidden bg-primary">
+      {/* <div className="absolute inset-0 mx-auto h-full w-full max-w-[1600px]">
         <IconWrapper />
-      </div>
+      </div> */}
       <div className="relative flex flex-col items-center gap-2 py-24">
         <div
           className="px-4 py-8 text-center"
@@ -23,7 +23,7 @@ export function WelcomeHero(props: PageBlocksWelcomeHero) {
             components={{
               h1: (props) => (
                 <h1
-                  className="mx-auto text-5xl font-extrabold leading-tight tracking-tighter text-primary md:text-7xl"
+                  className="mx-auto linear-wipe text-5xl font-extrabold leading-tight tracking-tighter text-primary md:text-7xl"
                   {...props}
                 />
               ),
@@ -53,7 +53,7 @@ export function WelcomeHero(props: PageBlocksWelcomeHero) {
                     key={"a"}
                     href={link.link || ""}
                   >
-                    <Button size="lg">{link.label}</Button>
+                    <Button size="lg" variant={'secondary'}>{link.label}</Button>
                   </Link>
                 )
               }
@@ -65,7 +65,7 @@ export function WelcomeHero(props: PageBlocksWelcomeHero) {
                     key={"b"}
                     href={link?.link || ""}
                   >
-                    <Button size="lg" variant={"ghost"}>
+                    <Button size="lg" variant={"outline"} className={"text-secondary"}>
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>

@@ -1,10 +1,11 @@
 ---
 links:
-  - label: Home
+  - label: Career
     link: /
   - label: Blog
     link: /blog
 ---
+
 
 
 

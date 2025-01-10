@@ -12,30 +12,30 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { BasicIcons, Logo } from "@/components/icons"
-import { ThemeToggle } from "@/components/theme-toggle"
+// import { ThemeToggle } from "@/components/theme-toggle"
 
 const links = [
-  { label: "Home", link: "/" },
+  { label: "Career", link: "/career" },
   { label: "Blog", link: "/blog" },
 ]
 const social = [
-  { handle: "llama-link", platform: "twitter" },
-  { handle: "llama-link", platform: "github" },
+  { handle: "preemptai", platform: "twitter" },
+  { handle: "preemptai", platform: "linkedin" },
 ]
 
 export function SiteHeader(props: PageAndNavQuery["nav"]) {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background">
+    <header className="sticky top-0 z-40 w-full bg-primary text-secondary">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <div className="flex items-center gap-6 md:gap-10">
           <Link
             href="/"
-            className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100"
+            className="flex items-center justify-center]"
           >
-            <Logo className="h-5 w-5" />
+            <Logo className="h-[32px] w-[194px]" />
           </Link>
 
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <ul className="flex items-center gap-3 p-6">
               {props.links?.map((link) => {
                 return (
@@ -51,7 +51,7 @@ export function SiteHeader(props: PageAndNavQuery["nav"]) {
                 )
               })}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
@@ -91,9 +91,9 @@ export function SecondaryMenu(props: { className?: string }) {
   return (
     <nav className={`${props.className} items-center space-x-1`}>
       {social.map((item) => {
-        const platformName = item?.platform as unknown as "github" | "twitter"
+        const platformName = item?.platform as unknown as "linkedin" | "twitter"
         const platformLinks = {
-          github: "https://github.com",
+          linkedin: "https://www.linkedin.com/company",
           twitter: "https://twitter.com",
         }
         const platformLink = platformLinks[platformName]
@@ -117,7 +117,7 @@ export function SecondaryMenu(props: { className?: string }) {
           </Link>
         )
       })}
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </nav>
   )
 }
