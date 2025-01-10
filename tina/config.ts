@@ -4,9 +4,9 @@ import { FeaturedIcons } from "../components/icons"
 import { IconSelector } from "./icon-select"
 
 export default defineConfig({
-  branch: process.env.VERCEL_GIT_COMMIT_REF || "",
-  clientId: process.env.TINA_CLIENT_ID || "",
-  token: process.env.TINA_TOKEN || "",
+  branch: "main",
+  clientId: "61a8a841-e1d8-4490-ad99-ef09b4927ff3",
+  token: "796a286f7bfa17830d36d9f643f89f4ea5763643",
   build: {
     publicFolder: "public",
     outputFolder: "admin",
